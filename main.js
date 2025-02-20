@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Email functionality with confirmation
   const projectBtn = document.getElementById('projectBtn');
 
-  projectBtn.addEventListener('click', (e) => {
+  projectBtn.addEventListener('click', (e) => { 
+    e.preventDefault();
     // Confirmation dialog
     const confirmStart = confirm('You\'re about to open your email client. Continue?');
 
